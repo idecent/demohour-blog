@@ -2054,3 +2054,12 @@ Rendered admin/shared/_edit.html.erb (35.9ms)
 Rendered admin/content/new.html.erb within layouts/administration (49.9ms)
 Completed 200 OK in 252ms (Views: 54.1ms | ActiveRecord: 11.9ms)
 DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/elite/projects/typo-6.0.9/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from <top (required)> at /Users/elite/projects/typo/config/environment.rb:5)
+  [1m[36mBlog Load (3.5ms)[0m  [1mSELECT `blogs`.* FROM `blogs` ORDER BY id LIMIT 1[0m
+  [1m[35mBlog Load (0.3ms)[0m  SELECT `blogs`.* FROM `blogs` ORDER BY id LIMIT 1
+  [1m[36mBlog Load (0.4ms)[0m  [1mSELECT `blogs`.* FROM `blogs` ORDER BY id LIMIT 1[0m
+TypoPlugins: just registered plugin [TypoPlugins::Gravatar] for :avatar target.
+  [1m[35mSQL (3.9ms)[0m  describe `articles_tags`
+  [1m[36mArticle Load (0.6ms)[0m  [1mSELECT published_at AS publication FROM contents WHERE published_at is not NULL AND type='Article'[0m
+  [1m[35mSQL (4.0ms)[0m  describe `articles_tags`
+  [1m[36mArticle Load (0.5ms)[0m  [1mSELECT published_at AS publication FROM contents WHERE published_at is not NULL AND type='Article'[0m

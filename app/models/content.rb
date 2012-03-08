@@ -152,7 +152,9 @@ class Content < ActiveRecord::Base
         dates = find_by_sql("SELECT #{column_name} AS publication #{from_where}")
 
         dates.map! do |d|
-          d.publication = Time.parse(d.publication).strftime('%Y-%m')
+          puts d.publication
+          #d.publication = Time.parse(d.publication).strftime('%Y-%m')
+          d.publication = d.publication.strftime('%Y-%m')
           d.freeze
           if !date_map.has_key?(d.publication)
             date_map[d.publication] = true
